@@ -1,0 +1,28 @@
+.netflix-logo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 2;
+}
+
+.netflix-logo img {
+    width: 200px;
+}
+
+.netflix-overlay {
+    background: rgb(0 0 0 / 55%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.netflix-background img {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(1.25) translateY(-10%);
+    -moz-transform: scale(1.25) translateY(-10%);
+    -ms-transform: scale(1.25) translateY(-10%);
+    transform: scale(1.25) translateY(-10%);
+    object-fit: cover;
+}
