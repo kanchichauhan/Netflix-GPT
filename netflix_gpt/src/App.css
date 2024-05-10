@@ -10,13 +10,14 @@
 }
 
 .netflix-overlay {
-    background: rgb(0 0 0 / 55%);
+    background: rgb(0 0 0 / 30%);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 }
+
 .netflix-background img {
     height: 100%;
     width: 100%;
