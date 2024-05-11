@@ -19,11 +19,7 @@
 }
 
 .netflix-background img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    -webkit-transform: scale(1.25) translateY(-10%);
-    -moz-transform: scale(1.25) translateY(-10%);
-    -ms-transform: scale(1.25) translateY(-10%);
-    transform: scale(1.25) translateY(-10%);
     object-fit: cover;
 }
