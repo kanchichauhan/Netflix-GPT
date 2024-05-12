@@ -11,7 +11,7 @@ const Login = () => {
     return (
     <div>
         <div><Header /></div>
-        <form>
+        <form className="signin-form">
             <h1>{!isSignIn ? 'Sign up' : 'Sign in'}</h1>
             {(!isSignIn) && <input type="text" placeholder="Fullname" class="fullname"/>}
             <input type="text" placeholder="Email Address" class="email"/>
