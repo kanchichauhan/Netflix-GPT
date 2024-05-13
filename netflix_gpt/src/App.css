@@ -17,7 +17,10 @@
     bottom: 0;
     left: 0;
 }
-
+.form-error {
+    color:#c12121 !important;
+    font-weight: 700 !important;
+}
 .netflix-background img {
     height: 100vh;
     width: 100%;
@@ -53,6 +56,7 @@ form.signin-form input, form.signin-form button {
     width: 90%;
     height: 46px;
     margin: 10px auto 10px auto;
+    border-radius: 5px;
 }
 
 form.signin-form button {
@@ -64,6 +68,7 @@ form.signin-form button {
     font-weight: 700;
     font-size: 15px;
     border: none;
+    cursor: pointer;
 }
 
 form.signin-form input {
