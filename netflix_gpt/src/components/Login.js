@@ -1,6 +1,9 @@
 import Header from "./Header";
 import { useState, useRef } from 'react';
 import { formValidation } from "../utils/formValidation";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../utils/firebase";
+
 
 const Login = () => {
     const [isSignIn, setSignInState] = useState(true);
@@ -22,6 +25,22 @@ const Login = () => {
             setTimeout(() => {
                 setError(false);
             }, 3000);
+        } else {
+            //   singn in or sign up 
+            if (!isSignIn) {
+                createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    console.log(user);
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    setError(errorCode +'-'+errorMessage)
+                });
+            }
         }
     }
 

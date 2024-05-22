@@ -75,4 +75,10 @@ form.signin-form input {
     background: #35373f;
     border: none;
     padding: 0 13px;
+    color: #fff
+}
+@media only screen and (max-width: 577px) {
+    .signin-form {
+        max-width: 80%
+    }
 }
