@@ -4,7 +4,8 @@ import { formValidation } from "../utils/formValidation";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import {useDispatch} from 'react-redux'
-import { addUser } from "../utils/userSlice";
+import { addUser, user } from "../utils/userSlice";
+import { netflixBack } from "./constants";
 
 const Login = () => {
     const [isSignIn, setSignInState] = useState(true);
@@ -71,7 +72,7 @@ const Login = () => {
     <div>
         <div><Header />
         <div className="netflix-background">
-                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg" />
+                <img src={netflixBack} />
                 <div className="netflix-overlay"></div>
             </div></div>
         <form className="signin-form">
