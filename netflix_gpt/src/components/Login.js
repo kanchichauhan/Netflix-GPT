@@ -4,7 +4,7 @@ import { formValidation } from "../utils/formValidation";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import {useDispatch} from 'react-redux'
-import { addUser, user } from "../utils/userSlice";
+import { addUser } from "../utils/userSlice";
 import { netflixBack } from "./constants";
 
 const Login = () => {
@@ -43,7 +43,6 @@ const Login = () => {
                     }).catch(() => {
                         setError(error.message)
                     });
-                    console.log(user);
                     // ...
                 })
                 .catch((error) => {
@@ -56,7 +55,6 @@ const Login = () => {
                 .then((userCredential) => {
                     // Signed up 
                     const user = userCredential.user;
-                    console.log(user);
                     // ...
                 })
                 .catch((error) => {
