@@ -8,7 +8,6 @@ const Browse = () => {
     return <div>
         <Header />
         <MainContainer />
-        <SecondaryContainer />
         {/*         
             Main container
                 - video background
@@ -17,6 +16,8 @@ const Browse = () => {
                 - movielist * n
                 - cards * n
         */}
+                <SecondaryContainer />
+
     </div>
 };
 export default Browse;
