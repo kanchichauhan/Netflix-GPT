@@ -8,4 +8,4 @@ export const options = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYmM0OTVmY2ZjY2YwODI5ZTFjYjIxN2IwOWMzNjE1OCIsInN1YiI6IjY2NThhYzZhMzYyZWY4OGRkZWE2MjAzYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5NvYKGh-4Q3wJpeX8hv7Kct577J0NwunSN46jhHVWn4'
     }
 };
-export const IMG_CDN = 'https://image.tmdb.org/t/p/w400';
+export const movieImgUrl = 'https://image.tmdb.org/t/p/w200';

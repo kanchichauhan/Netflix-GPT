@@ -149,7 +149,41 @@ button.video-moreinfo-cta {
 button.video-playCta:hover {
     opacity: 0.8;
 }
+.movie-card--wrapper {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
 
+.movie-card {
+    /* width: 200px; */
+    /* height: 151px; */
+    margin-right: 5px;
+}
+
+.movie-card > img {
+    object-fit: fill;
+    height: 136px;
+    width: 156px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 30px;
+}
+
+body {
+    background: #000;
+}
+.main-container-wrapper + div {
+    margin-top: -125px;
+    background: #000000;
+    z-index: 9;
+    position: relative;
+    padding: 0 40px;
+}
 @media only screen and (max-width: 577px) {
     .signin-form {
         max-width: 80%
