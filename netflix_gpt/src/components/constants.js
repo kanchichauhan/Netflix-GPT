@@ -9,3 +9,9 @@ export const options = {
     }
 };
 export const movieImgUrl = 'https://image.tmdb.org/t/p/w200';
+
+export const supported_languages = [
+    {identifier: 'en', name: 'English'},
+    {identifier: 'hindi', name: 'Hindi'},
+    {identifier: 'spanish', name: 'Spanish'}
+]
