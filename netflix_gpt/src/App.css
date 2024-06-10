@@ -249,6 +249,11 @@ select.select-lang-wrapper {
     color: #fff;
     outline: none;
 }
+.suggestion-wrapper {
+    background: #000;
+    position: absolute;
+    top: 40%;
+}
 @media only screen and (max-width: 577px) {
     .signin-form {
         max-width: 80%
