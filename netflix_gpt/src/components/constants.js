@@ -15,5 +15,5 @@ export const supported_languages = [
     {identifier: 'hindi', name: 'Hindi'},
     {identifier: 'spanish', name: 'Spanish'}
 ]
-
 // export const openAI_key = 'sk-proj-BwEBasD4u6bNYr4mbfSbT3BlbkFJbTgDH0jdFCzks3ZSPj1k';
+export const openAI_key = 'sk-proj-BwEBasD4u6bNYr4mbfSbT3BlbkFJbTgDH0jdFCzks3ZSPj1k';
